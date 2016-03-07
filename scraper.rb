@@ -32,7 +32,7 @@ def scrape_list(gender, url)
       source: url,
     }
     data[:image] = URI.join(url, data[:image]).to_s unless data[:image].to_s.empty?
-    puts data
+    # puts data
     ScraperWiki.save_sqlite([:id, :term], data)
   end
 end
