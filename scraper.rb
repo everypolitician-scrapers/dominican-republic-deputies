@@ -28,7 +28,7 @@ def scrape_list(gender, url)
       email:  mp.css('a[href*="mailto:"]/@href').text,
       image:  mp.css('img[src*="lists_images"]/@src').text,
       gender: gender,
-      term:   '2010',
+      term:   '2016',
       source: url,
     }
     data[:image] = URI.join(url, data[:image]).to_s unless data[:image].to_s.empty?
@@ -37,9 +37,9 @@ def scrape_list(gender, url)
 end
 
 term = {
-  id: '2010',
-  name: '2010–2016',
-  start_date: '2010',
+  id: '2016',
+  name: '2016–2020',
+  start_date: '2016',
   source: 'https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_the_Dominican_Republic',
 }
 ScraperWiki.save_sqlite([:id], term, 'terms')
