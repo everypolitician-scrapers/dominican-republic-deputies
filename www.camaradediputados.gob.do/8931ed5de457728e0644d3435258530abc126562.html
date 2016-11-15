@@ -1,0 +1,905 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>C&aacute;mara de Diputados de la Rep&uacute;blica Dominicana</title>
+<link href="css/nivo-slider.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="bloques.css" rel="stylesheet" type="text/css" />
+<link href="print.css" rel="stylesheet" type="text/css" media="print" />
+<script type="text/javascript" charset="utf-8" src="hideOnMobile.js"></script>
+<script language="javascript" src="js/flashjs.js"></script>
+<script language="javascript" src="js/funcs.js"></script>
+<script language="javascript">
+
+function setPyn(p) {
+	
+	document.getElementById('tag-1').style.display = 'none';
+	document.getElementById('tag-2').style.display = 'none';
+	document.getElementById('tag-3').style.display = 'none';
+
+	document.getElementById('tag-' + p).style.display = 'block';
+	
+	if (p == 1) {
+	document.getElementById('link-1').className = 'tags-zone-on';
+	} else {
+	document.getElementById('link-1').className = 'tags-zone-off';
+	}
+	
+	if (p == 2) {
+	document.getElementById('link-2').className = 'tags-zone-on';
+	} else {
+	document.getElementById('link-2').className = 'tags-zone-off';
+	}
+	
+	if (p == 3) {
+	document.getElementById('link-3').className = 'tags-zone-on';
+	} else {
+	document.getElementById('link-3').className = 'tags-zone-off';
+	}
+
+}
+
+//
+
+function setPynPort(p) {
+	document.getElementById('content-1').style.display = 'none';
+	document.getElementById('content-2').style.display = 'none';
+	document.getElementById('content-3').style.display = 'none';
+
+	document.getElementById('content-' + p).style.display = 'block';
+	
+	if (p == 1) {
+	document.getElementById('btn-1').className = 'tags-left-btn-select';
+	document.getElementById('btn-1').className = 'tags-left-btn-select2';
+	} else {
+	document.getElementById('btn-1').className = 'tags-left-btn';
+	document.getElementById('btn-1').className = 'tags-left-btn2';
+	}
+	
+	if (p == 2) {
+	document.getElementById('btn-2').className = 'tags-left-btn-select';
+	document.getElementById('btn-2').className = 'tags-left-btn-select2';
+	} else {
+	document.getElementById('btn-2').className = 'tags-left-btn';
+	document.getElementById('btn-2').className = 'tags-left-btn2';	
+	}
+	
+	if (p == 3) {
+	document.getElementById('btn-3').className = 'tags-left-btn-select';
+	document.getElementById('btn-3').className = 'tags-left-btn-select2';	
+	} else {
+	document.getElementById('btn-3').className = 'tags-left-btn';
+	document.getElementById('btn-3').className = 'tags-left-btn2';	
+	}
+
+}
+
+//
+function setPyn2(p) {
+
+	document.getElementById('agenda-1').style.display = 'none';
+	document.getElementById('agenda-2').style.display = 'none';
+	document.getElementById('agenda-3').style.display = 'none';
+
+	document.getElementById('agenda-' + p).style.display = 'block';
+	
+	if (p == 1) {
+	document.getElementById('agenda-link-1').className = 'tags-zone-on';
+	} else {
+	document.getElementById('agenda-link-1').className = 'tags-zone-off';
+	}
+	
+	if (p == 2) {
+	document.getElementById('agenda-link-2').className = 'tags-zone-on';
+	} else {
+	document.getElementById('agenda-link-2').className = 'tags-zone-off';
+	}
+	
+	if (p == 3) {
+	document.getElementById('agenda-link-3').className = 'tags-zone-on';
+	} else {
+	document.getElementById('agenda-link-3').className = 'tags-zone-off';
+	}
+
+}
+
+//
+
+function setPyn3(p) {
+
+	document.getElementById('enlaces-1').style.display = 'none';
+	document.getElementById('enlaces-2').style.display = 'none';
+	document.getElementById('enlaces-3').style.display = 'none';
+
+	document.getElementById('enlaces-' + p).style.display = 'block';
+	
+	if (p == 1) {
+	document.getElementById('enlaces-link-1').className = 'tags-zone-on';
+	} else {
+	document.getElementById('enlaces-link-1').className = 'tags-zone-off';
+	}
+	
+	if (p == 2) {
+	document.getElementById('enlaces-link-2').className = 'tags-zone-on';
+	} else {
+	document.getElementById('enlaces-link-2').className = 'tags-zone-off';
+	}
+	
+	if (p == 3) {
+	document.getElementById('enlaces-link-3').className = 'tags-zone-on';
+	} else {
+	document.getElementById('enlaces-link-3').className = 'tags-zone-off';
+	}
+
+}
+
+function navi(p) {
+	
+	document.getElementById('sublist-1').style.display = 'none';
+	document.getElementById('sublist-2').style.display = 'none';
+	document.getElementById('sublist-3').style.display = 'none';
+	document.getElementById('sublist-4').style.display = 'none';
+	document.getElementById('sublist-5').style.display = 'none';
+	document.getElementById('sublist-6').style.display = 'none';
+	document.getElementById('sublist-7').style.display = 'none';
+	document.getElementById('sublist-8').style.display = 'none';
+	document.getElementById('sublist-9').style.display = 'none';
+	
+	document.getElementById('sublist-' + p).style.display = 'block';
+	
+}
+
+function WebExterna(WebUrl) {
+ news_ventana = window.open();
+ news_ventana.document.write('<html><head><title>Esta visitando un sitio que no pertenece</title></head><frameset rows="125,*" border="0" framespacing="0" frameborder="no"><frame src="iFrameTop.aspx" height="125" name="frame" id="frame" scrolling="no">')
+ news_ventana.document.write('<frame src="'+WebUrl+'" name="contenido"></html>')
+}
+
+function VersionPrint (d) {
+	 window.print();
+}
+
+function SendSeccion (url) {
+	 window.open(url,'width=450,height=425');
+}
+
+</script>
+<!--[if lt IE 7]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+<![endif]-->
+
+<script type="text/JavaScript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+
+<script language="javascript">
+<!--
+
+function dipSearch() {
+
+	var xu;
+	xu = 'cd_diputados_new.aspx';
+	xu += '?gen=' + escape2(document.getElementById('gen').value);
+	xu += '&bloque=' + escape2(document.getElementById('bloque').value);
+	xu += '&circ=' + escape2(document.getElementById('circ').value);
+	xu += '&prov=' + escape2(document.getElementById('prov').value);
+	xu += '&ordmode=' + escape2('');
+	xu += '&ordid=' + escape2('');
+
+	location.href = xu;
+
+	return false;
+
+}
+
+function utf8(wide) {
+  var c, s;
+  var enc = "";
+  var i = 0;
+  while(i<wide.length) {
+    c= wide.charCodeAt(i++);
+    // handle UTF-16 surrogates
+    if (c>=0xDC00 && c<0xE000) continue;
+    if (c>=0xD800 && c<0xDC00) {
+      if (i>=wide.length) continue;
+      s= wide.charCodeAt(i++);
+      if (s<0xDC00 || c>=0xDE00) continue;
+      c= ((c-0xD800)<<10)+(s-0xDC00)+0x10000;
+    }
+    // output value
+    if (c<0x80) enc += String.fromCharCode(c);
+    else if (c<0x800) enc += String.fromCharCode(0xC0+(c>>6),0x80+(c&0x3F));
+    else if (c<0x10000) enc += String.fromCharCode(0xE0+(c>>12),0x80+(c>>6&0x3F),0x80+(c&0x3F));
+    else enc += String.fromCharCode(0xF0+(c>>18),0x80+(c>>12&0x3F),0x80+(c>>6&0x3F),0x80+(c&0x3F));
+  }
+  return enc;
+}
+
+var hexchars = "0123456789ABCDEF";
+
+function toHex(n) {
+  return hexchars.charAt(n>>4)+hexchars.charAt(n & 0xF);
+}
+
+var okURIchars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-";
+
+function encodeURIComponentNew(s) {
+  var s = utf8(s);
+  var c;
+  var enc = "";
+  for (var i= 0; i<s.length; i++) {
+    if (okURIchars.indexOf(s.charAt(i))==-1)
+      enc += "%"+toHex(s.charCodeAt(i));
+    else
+      enc += s.charAt(i);
+  }
+  return enc;
+}
+
+function escape2(fld)
+{
+	if (fld == "") return '';
+	var encodedField = "";
+	var s = fld;
+	if (typeof encodeURIComponent == "function")
+	{
+		// Use JavaScript built-in function
+		// IE 5.5+ and Netscape 6+ and Mozilla
+		encodedField = encodeURIComponent(s);
+	}
+	else 
+	{
+		// Need to mimic the JavaScript version
+		// Netscape 4 and IE 4 and IE 5.0
+		encodedField = encodeURIComponentNew(s);
+	}
+	return encodeURIComponentNew(fld);
+}
+
+function ALPHABET()
+            {Skip=""
+             if (arguments.length>0)
+                Skip=arguments[0]
+             Inactive=""
+             if (arguments.length>1)
+                Inactive=arguments[1]
+             Alphabet  ="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+             Alpha_Line=""
+             for (i=0;i>26;i++)
+                 {Letter=Alphabet.substr(i,1)
+                  if ((Alpha_Line!="" )&&  // Suppress ending "|" on the sides
+                      (!((Skip   =="Z")&&
+                         (Letter =="Z"))))
+                     Alpha_Line=Alpha_Line+">FONT COLOR=Green>|>/FONT>"
+                  if (Letter!=Skip)  // Suppress "Skip" letter (if any)
+                     if (Inactive.indexOf(Letter)==-1)  // Letter is active
+                        Alpha_Line=Alpha_Line+" >A HREF='#"+Letter+"'>"+Letter+">/A>"
+                     else  // Letter is inactive
+                        Alpha_Line=Alpha_Line+" >FONT COLOR=Gray>"+Letter+">/FONT>"
+                  if ((Letter!="Z")&&  // Suppress extra blanks
+                      (Letter!=Skip))
+                     Alpha_Line=Alpha_Line+" "
+                 }
+             return Alpha_Line
+}
+
+-->
+</script>
+</head>
+
+<body>
+
+<div class="header">
+  <div id="cont-1">
+  
+  <div id="menu" align="right"><a href="cd_frontpage.aspx">Inicio</a> | <a href="cd_sitemap.aspx">Mapa de sitio</a> | <a href="cd_contactos.aspx">Cont&aacute;ctenos</a><a title="Google+" target="_blank" href="https://plus.google.com/+CamaraDiputadosRD"><img src="img/googleplus.png" align="absmiddle" border="0" style="margin-left:8px;" /></a> <a title="Facebook" target="_blank" href="http://www.facebook.com/DiputadosRD"><img src="img/ico-f.png" align="absmiddle" border="0" style="margin-left:1px;" /></a><a title="Twitter" target="_blank" href="https://twitter.com/DiputadosRD"><img src="img/twitter.png" align="absmiddle" border="0" style="margin-left:1px;" /></a> <a title="YouTube" target="_blank" href="http://www.youtube.com/user/CamaraDiputadosRD"><img src="img/ico-y.png" align="absmiddle" border="0" style="margin-left:1px;" /></a><a title="Instangram" target="_blank" href="https://www.instagram.com/diputadosrd"><img src="img/instagram.png" align="absmiddle" border="0" style="margin-left:1px;" /></a><a title="Flickr" target="_blank" href="https://www.flickr.com/photos/diputadosrd"><img src="img/flickr.png" align="absmiddle" border="0" style="margin-left:1px;" /></a></div>
+  <div style="clear:both;"></div>
+    <div class="buscador">
+       <form action="search_results.aspx" method="get" name="TopSrch" id="TopSrch" style="margin:0;" onsubmit="return TopSrch_Now(this.s.value);">      
+        <table border="0">
+          <tr>
+            <td><input name="s" type="text" id="s" maxlength="25" class="text" /></td>
+            <td><input type="submit" name="Submit" value="&nbsp;" class="btn" /></td>  
+            
+             
+                               
+          </tr>
+        </table>        
+      </form>
+    </div>   
+    
+    
+
+
+
+
+
+
+
+
+
+
+    
+  </div>
+  <div style="width:301px; height:80px; margin-top:20px; margin-left:17px; float:left; cursor:pointer;" onclick="location.href='cd_frontpage.aspx'"></div>
+  
+  <div class="her_tools_top">
+<table cellpadding="0" cellspacing="0" border="0" width="50">
+  <tr>
+    
+  </tr>
+</table>
+</div>
+
+</div>
+
+
+<div class="main">
+  <div class="left" style="float:left;">
+
+
+
+<div id="menuv-col">
+  <ul>
+    <li><a style="height:16px; clear:both;" href="cd_frontpage.aspx">Inicio</a></li>
+    <li><a style="height:16px; clear:both;" href="javascript:;" onClick="navi('1');">Institución</a>
+      <ul id="sublist-1" style="display:none; margin-top:10px; margin-bottom:10px; padding-top:5px;">
+      
+        <li><a href="cd_mvv.aspx">Misión, Visión, Valores</a></li>
+        
+        <div class="menuv-col-line"></div>
+        
+        <li><a href="cd_mens_bienv.aspx">Presidencia</a></li>
+         
+        <div class="menuv-col-line"></div>       
+        
+        <li><a style="color:#FFF;" class="MenuInterioresOn" href="cd_diputados_new.aspx?gen=&bloque=&circ=&prov=&ordmode=&ordid=">Diputados/as</a></li>
+        
+        <div class="menuv-col-line"></div>
+        
+        <li><a href="cd_org_pleno.aspx">Organización</a></li>
+        
+        <div class="menuv-col-line"></div>
+        
+        <li><a href="cd_datoshistoricos.aspx">Datos Históricos</a></li>
+        
+        <div class="menuv-col-line"></div>
+        
+        <li><a href="cd_gm_fotos.aspx" style="border:none;">Galería Multimedia</a></li>
+        
+      </ul>
+    </li>
+    <li><a style="height:16px; clear:both;" href="javascript:;" onClick="navi('2');">Labor Legislativa</a>
+      <ul id="sublist-2" style="display:none; margin-top:10px; margin-bottom:10px; padding-top:5px;">
+        
+        <li><a href="cd_secciones_pleno.aspx">Sesiones del Pleno</a></li>
+        
+        <div class="menuv-col-line"></div>
+        
+        <li><a href="cd_comisiones.aspx">Comisiones</a></li>
+        
+        
+        <div class="menuv-col-line"></div>
+        
+        <li><a href="cd_sil.aspx">Sistema de Información Legislativa</a></li>
+                
+        
+      </ul>
+    </li>
+
+<li><a style="height:16px; clear:both;" href="javascript:;" onClick="navi('3');">Agenda</a>
+      <ul id="sublist-3" style="display:none; margin-top:10px; margin-bottom:10px; padding-top:5px;">
+        
+		<li><a href="http://www.camaradediputados.gob.do/app/app_2011/cd_ordenes_dia.aspx">&Oacute;rdenes del d&iacute;a del Pleno</a></li>
+        <div class="menuv-col-line"></div>
+        <li style="display:none;"><a onClick="WebExterna('http://www.camaradediputados.gov.do/PortalSILCamara/Default.aspx?tabid=73')" href="javascript:;">Orden de la semana</a></li>
+		
+        
+        <li><a href="cd_agenda_comisiones_2016_2020.aspx">De Comisiones</a></li>
+        
+        <div class="menuv-col-line"></div>
+        
+        
+        <li><a href="cd_actividades.aspx" style="border:none;">De Actividades en general</a></li>
+        
+      </ul>
+    </li>    
+    
+    <li><a href="javascript:;" onClick="navi('7');">Representación</a>
+      <ul id="sublist-7" style="display:none; margin-top:10px; margin-bottom:10px; padding-top:5px;">
+	  
+        
+        <li><a href="cd_centrepres.aspx">Centro de Representación</a></li>
+        
+        <div class="menuv-col-line"></div>
+        
+        <li><a href="cd_pres2_actividades.aspx">Actividades de representación</a></li>
+        
+        <div class="menuv-col-line"></div>
+        
+      </ul>
+    </li>
+    
+    <li><a style="height:16px; clear:both;" href="javascript:;" onClick="navi('9');">Fiscalización</a>
+      <ul id="sublist-9" style="display:none; margin-top:10px; margin-bottom:10px; padding-top:5px;">
+
+		
+		
+        <li><a href="cd_mision_fiscalizacion.aspx">Fiscalizaci&oacute;n</a></li>
+        
+        
+        
+		
+      </ul>
+    </li>
+    
+    <li><a style="height:16px; clear:both;" href="javascript:;" onClick="navi('4');">Transparencia</a>
+    
+      <ul id="sublist-4" style="display:none; margin-top:10px; margin-bottom:10px; padding-top:5px;">
+        
+        <li><a href="cd_t(2)_constitucion.aspx">Marco Legal</a></li>
+        
+        
+        <div class="menuv-col-line"></div>
+        <li><a href="http://www.camaradediputados.gob.do/app/app_2011/cd_org_pleno.aspx" style="color:#0345AA;" >Estructura Orgánica de la Institución</a></li>
+        
+         <div class="menuv-col-line"></div> 
+        <li><a href="http://www.camaradediputados.gob.do/app/app_2011/img/infografia.jpg" style="color:#0345AA;">Normativas:  Derechos de los Ciudadanos a Acceder a la Información Pública</a></li>
+        
+         <div class="menuv-col-line"></div> 
+        <li><a href="http://www.camaradediputados.gob.do/app/app_2011/cd_t(1)_estructura.aspx" style="color:#0345AA;">Oficina de Acceso a la Información</a></li>
+        
+         <div class="menuv-col-line"></div>
+         
+        <li><a href="cd_noregistros.aspx">Plan Estratégico de la Institución</a></li>
+        
+        
+         <div class="menuv-col-line"></div>
+         <li><a href="http://www.camaradediputados.gob.do/app/app_2011/frontpage.aspx" style="color:#0345AA;">Publicaciones Oficiales</a></li>
+        
+         <div class="menuv-col-line"></div>
+         <li><a href="http://www.camaradediputados.gob.do/app/app_2011/IG20142/index.html" style="color:#0345AA;">Estadísticas Institucionales</a></li>
+        
+         <div class="menuv-col-line"></div>          
+         
+         <li><a href="http://www.camaradediputados.gob.do/app/app_2011/cd_mvv.aspx" style="color:#0345AA;" >Servicios al Público</a></li>
+        
+         <div class="menuv-col-line"></div>
+         <li><a href="http://www.311.gob.do/" style="color:#0345AA;" >Acceso al Portal de 311</a></li>
+        
+         <div class="menuv-col-line"></div>        
+         
+         <li><a href="http://www.camaradediputados.gob.do/app/app_2011/cd_declajuradadc.aspx" style="color:#0345AA;">Declaraciones Juradas de Bienes</a></li>
+        
+     <div class="menuv-col-line"></div>
+        
+        <li><a href="cd_presupuesto_eje.aspx">Presupuesto</a></li>
+        
+   
+        
+        <div class="menuv-col-line"></div>
+        
+        <li><a href="cd_t(4)_nominas_diputados.aspx">Recursos Humanos</a></li>
+        
+        <div class="menuv-col-line"></div>
+        
+         <li><a href="http://www.camaradediputados.gob.do/app/app_2011/cd_noregistros.aspx" style="color:#0345AA;">Beneficiarios de Programas Asistenciales</a></li>
+        
+         <div class="menuv-col-line"></div>
+        
+        <li><a href="cd_declajuradadc.aspx">Diputados</a></li>
+        
+        <div class="menuv-col-line"></div>        
+        
+        <li><a href="cd_contcompras.aspx">Compras y Contrataciones</a></li>
+           
+        
+        <div class="menuv-col-line"></div>     
+        
+                   
+        
+        
+        <li><a href="cd_inf_gestion.aspx">Proyectos y Programas</a></li>
+        
+        <div class="menuv-col-line"></div>
+        
+         
+        
+        <li><a href="cd_t(7)_estadocuentas.aspx">Finanzas</a></li>
+        
+        <div class="menuv-col-line"></div>
+                   
+      </ul>   
+    </li>	
+    <li><a style="height:16px; clear:both;" href="javascript:;" onClick="navi('6');">Acceso a la Información</a>
+      <ul id="sublist-6" style="display:none; margin-top:10px; margin-bottom:10px; padding-top:5px;">
+        
+        <li><a href="cd_t(1)_estructura.aspx">Estructura Organizacional de la Oficina de Libre Acceso a la Información Pública (OAI)</a></li>
+        
+        <div class="menuv-col-line"></div>
+        
+        <li><a href="cd_t(1)_manualorg.aspx">Manual de Organización de la OAI</a></li>
+        
+        <div class="menuv-col-line"></div>
+        
+        <li><a href="cd_t(1)_estadisticas.aspx">Estadísticas y Balances de gestión OAI</a></li>
+        
+        <div class="menuv-col-line"></div>
+         
+        
+        <li><a href="cd_t(1)_contactos.aspx">Nombre del Responsable de Acceso a la Información y Medios para Contactarle</a></li>
+        
+        <div class="menuv-col-line"></div>  
+        
+        <li><a href="cd_noregistros.aspx">Información Clasificada</a></li>
+        
+        <div class="menuv-col-line"></div> 
+        
+        <li><a href="cd_indice_documentos.aspx">Índice de Documentos Disponibles para la Entrega</a></li>
+        
+        <div class="menuv-col-line"></div>         
+		
+        <li><a href="http://www.camaradediputados.gob.do/app/app_2011/cd_gm_fotos.aspx?c=Transparencia">Programa Transparencia Proactiva</a></li>
+        
+        <div class="menuv-col-line"></div>           
+        
+        <li><a href="cd_t(1)_solicitudinfo.aspx" style="border:none;">Formulario de Solicitud</a></li>
+        
+         <div class="menuv-col-line"></div>
+        
+      </ul>
+    </li>
+    <li><a style="height:16px; clear:both;" href="javascript:;" onClick="navi('8');">Constitución Dominicana Infantil</a>
+<ul id="sublist-8" style="display:none; margin-top:10px; margin-bottom:10px; padding-top:5px;">
+	  	 
+        <li><a href="cd_introduccion.aspx">Introducción</a></li>
+          
+	  	<div class="menuv-col-line"></div>
+        
+        <li><a href="cd_resoluciones_emiciclo.aspx">Resoluciones del Hemiciclo</a></li>
+          
+		<div class="menuv-col-line"></div>    
+		
+        <li><a href="cd_convenios.aspx">Convenios y Acuerdos</a></li>
+          
+		<div class="menuv-col-line"></div>
+        
+        <li><a href="cd_impresiones.aspx">Impresiones Ejemplares Constitución Dominicana Infantil</a></li>
+        
+		<div class="menuv-col-line"></div>
+		
+        <li><a href="cd_operaciones_sin_costos.aspx">Operaciones Sin Costo</a></li>
+        
+        <div class="menuv-col-line"></div>
+		
+        <li><a href="cd_gastos.aspx">Gastos</a></li>
+        
+        <div class="menuv-col-line"></div>
+		
+        <li><a href="cd_documentosanexos.aspx">Documentos Anexos</a></li>
+        
+		<div class="menuv-col-line"></div>		
+		
+        <li><a href="cd_videos.aspx?c=Boletines&id=3633">Boletines, Spots Publicitarios y Cápsulas Educativas</a></li>
+              
+		<div class="menuv-col-line"></div>
+		
+        <li></li>
+        
+        <li><a href="cd_gm_fotos.aspx?c=Institucion">Galería de Fotografías</a></li>
+        
+        <div class="menuv-col-line"></div>
+		
+      </ul>
+    </li>		
+    <li>
+      <ul id="sublist-5">
+        
+      </ul>
+    </li>	
+  </ul>
+</div>
+
+<div class="media_print">
+
+<div align="center" style="margin-top:5px; margin-bottom:5px;">
+
+  <div id="flashDestDiv_b3" name="flashDestDiv_b3"></div>
+ <script language="JavaScript" type="text/javascript">
+writeFlash('banners/periodico12345.swf', 'flashDestDiv_b3', 222, 70, true);
+</script>
+
+</div>
+
+
+
+
+<div align="center" style="margin-top:5px;">
+<a href="http://www.camaradediputados.gob.do/app/app_2011/cd_asamblea_cont.aspx">
+	<img src="img/asambleacont20152.jpg" />
+</a>
+</div>
+<div align="center" style="margin-top:5px;">
+
+  <div id="Div1" name="flashDestDiv_b2"></div>
+  <script language="javascript" type="text/javascript">
+writeFlash('banners/PAZ.swf', 'flashDestDiv_b2', 222, 70, true);
+</script> 
+
+</div>
+
+<div align="center" style="margin-top:5px;">
+
+  <div id="flashDestDiv_b6" name="flashDestDiv_b6"></div>
+  <script language="javascript" type="text/javascript">
+writeFlash('banners/transmision-new.swf', 'flashDestDiv_b6', 222, 70, true);
+</script>
+ 
+</div>
+<div style="display:none;"><a style="display:none;" target="_blank" href="http://www.camaradediputados.gov.do/portalsilcamara/"><img src="img/banners/sil-banner.jpg" style="margin-top:5px;" width="221" height="45" border="0" /></a><br />
+  <a href="cd_proxsecc.aspx"><img src="img/banners/convocatoria.jpg" width="221" height="45" border="0" /></a><br />
+  <a href="http://www.eldiputado.org"><img src="img/banners/diputado-digital.jpg" width="221" height="43" border="0" /></a><br />
+</div>
+<div align="center" style="margin-top:5px;"><a href="cd_glin.aspx"><img src="img/banners/glin.jpg" border="0" /></a></div>
+<div align="center" style="margin-top:5px; display:none;">
+  <div id="flashDestDiv_b1" name="flashDestDiv_b1"></div>
+  <script language="javascript" type="text/javascript">
+writeFlash('banners/transmision-new.swf', 'flashDestDiv_b1', 222, 70, true);
+</script> 
+</div>
+
+<div>
+<a href="http://www.camaradediputados.gob.do/app/app_2011/webcell2/index.htm">
+	<img src="img/banner_app_web.jpg" />
+</a>
+</div>
+
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+
+ hideOnMobile('flashDestDiv_b3');
+ hideOnMobile('flashDestDiv_b5');
+ hideOnMobile('flashDestDiv_b2');
+
+/* ]]> */
+</script>
+<h2 style="padding-bottom:5px; padding-top:10px;">Galer&iacute;as Multimedia</h2>
+<div class="tags-zone">
+  <ul>
+    <li><a id="link-1" onClick="setPyn('1')" href="javascript:;">Videos</a></li>
+    <li><a id="link-2" onClick="setPyn('2')" href="javascript:;">Fotograf&iacute;as</a></li>
+    <li><a id="link-3" onClick="setPyn('3')" href="javascript:;">Audio</a></li>
+  </ul>
+  <div style="clear:both;"></div>
+  <div class="tags-zone-ct-z" id="tag-1" style="display:none;">
+    <div id="tags-text-2"><a href="cd_videos.aspx?c=Sesion&id=9655">Sesión</a></div>
+    <div id="tags-line"></div>
+    <div id="Div3"><a href="cd_videos.aspx?c=Asamblea&id=2964">Asamblea</a></div>
+    <div id="Div4"></div>
+    <div id="Div5"><a href="cd_videos.aspx?c=Boletines&id=4240">Boletines</a></div>
+    <div id="Div6"></div>
+    <div id="Div7"><a href="cd_videos.aspx?c=Institucion&id=9578">Institución</a></div>
+    <div id="Div8"></div>
+    <div align="right" class="tags-zone-more"><a id="A1" href="cd_videos.aspx?id=">Ver todos &gt;</a></div>
+  </div>
+  <div class="tags-zone-ct-z" id="tag-2" style="display:none;">
+    <div id="Div9"><a href="cd_gm_fotos.aspx?c=Presidencia">Presidencia</a></div>
+    <div id="Div10"></div>
+    <div id="Div11"><a href="cd_gm_fotos.aspx?c=Representacion">Representación</a></div>
+    <div id="Div12"></div>
+    <div id="Div13"><a href="cd_gm_fotos.aspx?c=Institucion">Institución</a></div>
+    <div id="Div14"></div>
+    <div align="right" class="tags-zone-more"><a href="cd_gm_fotos.aspx">Ver todos &gt;</a></div>
+  </div>
+  <div class="tags-zone-ct-z" id="tag-3" style="display:none;">
+    <div id="tags-text-2"><a target="_blank" href="/serve/listfile_download.aspx?id=3084&num=1">Constitución Conversada - Título XIII, XIV, XV, Disposición Final</a> &nbsp;&nbsp;- 27,793.0 Kb</div><div id="tags-text-3"><a target="_blank" href="/serve/listfile_download.aspx?id=3084&num=1">Descargar</a></div><div id="tags-line"></div><div id="tags-text-2"><a target="_blank" href="/serve/listfile_download.aspx?id=3083&num=1">Constitución Conversada - Título VI, VII, VIII, IX, X, XI, XII</a> &nbsp;&nbsp;- 71,436.7 Kb</div><div id="tags-text-3"><a target="_blank" href="/serve/listfile_download.aspx?id=3083&num=1">Descargar</a></div><div id="tags-line"></div><div id="tags-text-2"><a target="_blank" href="/serve/listfile_download.aspx?id=3082&num=1">Constitución Conversada - Título IV, V</a> &nbsp;&nbsp;- 65,670.0 Kb</div><div id="tags-text-3"><a target="_blank" href="/serve/listfile_download.aspx?id=3082&num=1">Descargar</a></div><div id="tags-line"></div><div id="tags-text-2"><a target="_blank" href="/serve/listfile_download.aspx?id=3081&num=1">Constitución Conversada - Título III</a> &nbsp;&nbsp;- 49,980.6 Kb</div><div id="tags-text-3"><a target="_blank" href="/serve/listfile_download.aspx?id=3081&num=1">Descargar</a></div><div id="tags-line"></div><div id="tags-text-2"><a target="_blank" href="/serve/listfile_download.aspx?id=3080&num=1">Constitución Conversada - Título II</a> &nbsp;&nbsp;- 76,390.7 Kb</div><div id="tags-text-3"><a target="_blank" href="/serve/listfile_download.aspx?id=3080&num=1">Descargar</a></div><div id="tags-line"></div><div id="tags-text-2"><a target="_blank" href="/serve/listfile_download.aspx?id=3079&num=1">Constitución Conversada - Preámbulo, Título I</a> &nbsp;&nbsp;- 37,549.4 Kb</div><div id="tags-text-3"><a target="_blank" href="/serve/listfile_download.aspx?id=3079&num=1">Descargar</a></div>
+    <div align="right" class="tags-zone-more"><a href="cd_gm_audios.aspx">Ver todos &gt;</a></div>
+  </div>
+</div>
+<div style="clear:both; margin-bottom:5px;"></div>
+</div><script language="javascript">
+
+  
+	 navi(1);
+   
+
+  setPyn(1);
+
+</script> 
+</div>
+  <div class="contenido">
+    <div id="slide">
+      
+      <img src="/serve/renderimage.aspx?x=736&y=182&cz=5&m=0&i=16&f=generic_images" border="0"/> <br />
+      <img src="files/Jose_Marti.jpg" border="0"/> <br />
+      <a href="files/El_Diputado.pdf">Ver archivo</a>      
+      
+      <h2>Busque sus Diputados</h2>
+      <p class="parrafo"><P><LONG Text></P></p>
+      <div id="marco">
+        <div id="sublist-2" style="margin-bottom:5px;">
+          <div class="media_print" style="background-color:#FAFAFA; border-bottom:1px solid #003366;">
+            <table width="740" border="0" cellpadding="2" cellspacing="0" class="diptablesearchs">
+              <tr>
+                <td width="177" height="31" align="left" valign="middle"><div style="font-weight:bold;">Ordenar por:</div></td>
+                <td width="197"><strong>Provincia</strong></td>
+                <td width="99"><a href="/app/app_2011/cd_diputados_new.aspx?gen=Masculino&ordid=data11&ordmode=asc">Circunscripción</a></td>
+                <td width="100"><a href="/app/app_2011/cd_diputados_new.aspx?gen=Masculino&ordid=data9&ordmode=asc">Bloque</a></td>
+                <td width="147"><a href="/app/app_2011/cd_diputados_new.aspx?gen=Masculino&ordid=data10&ordmode=asc">Género</a></td>
+              </tr>
+			  <form id="form1" name="form1" method="post" action="" style="margin:0;">
+              <tr>
+                <td align="left" valign="middle"><div style="font-weight:bold;">Filtrar por:</div></td>
+                
+                <td>
+                
+
+
+				
+                    <select id="prov" class="boton_menu_derec" onChange="dipSearch();">
+                      <option value="">Todas</option>
+                      
+<option value="Azua" >Azua</option><option value="Bahoruco" >Bahoruco</option><option value="Barahona" >Barahona</option><option value="Dajabón" >Dajabón</option><option value="De dominicanos en el exterior" >De dominicanos en el exterior</option><option value="Distrito Nacional" >Distrito Nacional</option><option value="Duarte" >Duarte</option><option value="Espaillat" >Espaillat</option><option value="Elías Piña" >Elías Piña</option><option value="El Seibo" >El Seibo</option><option value="Hato Mayor" >Hato Mayor</option><option value="Hermanas Mirabal" >Hermanas Mirabal</option><option value="Independencia" >Independencia</option><option value="La Vega" >La Vega</option><option value="La Altagracia" >La Altagracia</option><option value="La Romana" >La Romana</option><option value="Montecristi" >Montecristi</option><option value="María Trinidad Sánchez" >María Trinidad Sánchez</option><option value="Monte Plata" >Monte Plata</option><option value="Monseñor Nouel" >Monseñor Nouel</option><option value="Nacional" >Nacional</option><option value="Puerto Plata" >Puerto Plata</option><option value="Peravia" >Peravia</option><option value="Pedernales" >Pedernales</option><option value="Santiago Rodríguez" >Santiago Rodríguez</option><option value="San José de Ocoa" >San José de Ocoa</option><option value="San Juan" >San Juan</option><option value="Santiago" >Santiago</option><option value="Sánchez Ramírez" >Sánchez Ramírez</option><option value="Samaná" >Samaná</option><option value="San Cristóbal" >San Cristóbal</option><option value="Santo Domingo" >Santo Domingo</option><option value="San Pedro de Macorís" >San Pedro de Macorís</option><option value="Valverde" >Valverde</option>
+                    </select>
+					
+                  </td>
+                <td><select id="circ" class="boton_menu_derec" onChange="dipSearch();">
+                    <option value="">Ninguna</option>
+<option value="1" >1</option><option value="2" >2</option><option value="3" >3</option><option value="4" >4</option><option value="5" >5</option><option value="6" >6</option>
+                  </select></td>
+                <td><select id="bloque" class="boton_menu_derec" onChange="dipSearch();">
+                    <option value="">Todos</option>
+<option value="PLD" >PLD</option><option value="PRD" >PRD</option><option value="PRSC" >PRSC</option><option value="PRM" >PRM</option><option value="PLR" >PLR</option><option value="APD" >APD</option><option value="ALPAIS" >ALPAIS</option><option value="BIS" >BIS</option><option value="FNP" >FNP</option><option value="PPC" >PPC</option><option value="MIUCA" >MIUCA</option><option value="MODA" >MODA</option><option value="PQDC" >PQDC</option><option value="FRENTE-AMPLIO" >FRENTE-AMPLIO</option>
+                  </select></td>
+                <td><select id="gen" class="boton_menu_derec" onChange="dipSearch();">
+                    <option value="">Todos</option>
+<option value="Masculino" selected>Masculino</option><option value="Femenino" >Femenino</option>                
+
+                  </select></td>                 
+                  
+              </tr>
+              
+			  </form>
+            </table>
+            
+            <div>
+<table width="100%" border="0" cellspacing="0" cellpadding="5">
+            
+            <tr>            
+                  
+                  <CENTER style="font-family:Arial; font-size:12pt">
+                    <FONT COLOR=#666666>Ir a:</FONT> 
+                                    <A style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="cd_diputadosA.aspx">A</A>
+                    <FONT COLOR=Green>  </FONT> <A style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="cd_diputadosB.aspx">B</A>
+                    <FONT COLOR=Green>  </FONT> <A style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="cd_diputadosC.aspx">C</A>
+                    <FONT COLOR=Green>  </FONT> <A style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="cd_diputadosD.aspx">D</A>
+                    <FONT COLOR=Green>  </FONT> <A style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="cd_diputadosE.aspx">E</A>
+                    <FONT COLOR=Green>  </FONT> <A style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="cd_diputadosF.aspx">F</A>
+                    <FONT COLOR=Green>  </FONT> <A style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal"HREF="cd_diputadosG.aspx">G</A>
+                    <FONT COLOR=Green>  </FONT> <A style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal"HREF="cd_diputadosH.aspx">H</A>
+                     <FONT COLOR=Green>  </FONT> <A style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="cd_diputadosI.aspx">I</A>
+                    <FONT COLOR=Green>  </FONT> <A style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="cd_diputadosJ.aspx">J</A>
+                    <FONT COLOR=Green>  </FONT> <A style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="cd_diputadosK.aspx">K</A>
+                    <FONT COLOR=Green>  </FONT> <A style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="cd_diputadosL.aspx">L</A>
+                    <FONT COLOR=Green>  </FONT> <A style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="cd_diputadosM.aspx">M</A>
+                    <FONT COLOR=Green>  </FONT> <A style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="cd_diputadosN.aspx">N</A>
+                    <FONT COLOR=Green>  </FONT> <A style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="cd_diputadosO.aspx">O</A>
+                    <FONT COLOR=Green>  </FONT> <A style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="cd_diputadosP.aspx">P</A>
+                    <FONT COLOR=Green>  </FONT> <A style="COLOR:GRAY; font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="#">Q</A>
+                    <FONT COLOR=Green>  </FONT> <A style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="cd_diputadosR.aspx">R</A>
+                    <FONT COLOR=Green>  </FONT> <A style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal"HREF="cd_diputadosS.aspx">S</A>
+                    <FONT COLOR=Green>  </FONT> <A style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="cd_diputadosT.aspx">T</A>
+                    <FONT COLOR=Green>  </FONT> <A style="COLOR:GRAY; font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="#">U</A>
+                    <FONT COLOR=Green>  </FONT> <A style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="cd_diputadosV.aspx">V</A>
+                    <FONT COLOR=Green>  </FONT> <A style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="cd_diputadosW.aspx">W</A>
+                    <FONT COLOR=Green>  </FONT> <A style="COLOR:GRAY; font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="#">X</A>
+                    <FONT COLOR=Green>  </FONT> <A style="font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="cd_diputadosY.aspx">Y</A>
+                    <FONT COLOR=Green>  </FONT> <A style="COLOR:GRAY; font-family:'Times New Roman'; font-size:12pt; font-weight:normal" HREF="#">Z</A>
+                </CENTER>
+                  
+                  
+              
+              
+              </tr>
+            
+            </table>
+            
+</div>           
+            
+          </div>
+          <br />        
+          
+		  <div style="clear:both;"></div><h2>San Pedro de Macor&#237;s</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9539"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9539&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9539">Aciris Milcíades Medina Báez</a></div><div class="A11" style="color:#333333;">Bloque: PRSC</div><div class="A11" style="color:#333333;">Provincia: San Pedro de Macorís</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Hermanas Mirabal</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=758"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=758&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:a.rizek@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=758">Afif Nazario Rizek Camilo</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Hermanas Mirabal</div></td></td></tr></table></div><div style="clear:both;"></div><h2>La Vega</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9506"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9506&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:a.burgos@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9506">Agustín Burgos Tejada</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: La Vega</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>S&#225;nchez Ram&#237;rez</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2027"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2027&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:a.jerez@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2027">Alejandro Jerez Espinal</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Sánchez Ramírez</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santo Domingo</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2074"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2074&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:ai.gonzalez@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2074">Alexis Isaac Jiménez González</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 3</div></td></td></tr></table></div><div style="clear:both;"></div><h2>De dominicanos en el exterior</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=3221"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=3221&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:a.rodriguez@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=3221">Alfredo Antonio Rodríguez Azcona</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: De dominicanos en el exterior</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Distrito Nacional</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9525"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9525&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9525">Alfredo Pacheco Osoria</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Distrito Nacional</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santo Domingo</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9511"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9511&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:Amadodiaz1115@hotmail.com"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9511">Amado Antonio Díaz Jiménez</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Espaillat</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2055"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2055&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:a.bautista@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2055">Andrés Enmanuel Bautista Taveras</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Espaillat</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Azua</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9524"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9524&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9524">Ángel Ovelio Ogando Díaz</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Azua</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santiago</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=791"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=791&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:a.colon@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=791">Antonio Bernabel Colón</a></div><div class="A11" style="color:#333333;">Bloque: PRD</div><div class="A11" style="color:#333333;">Provincia: Santiago</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santo Domingo</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2046"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2046&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:a.serrata@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2046">Aquilino Serrata Uceta</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 4</div></td></td></tr></table></div><div style="clear:both;"></div><h2>La Vega</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=731"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=731&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:a.reyes@camaradediputados,gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=731">Aridio Antonio Reyes</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: La Vega</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Montecristi</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2053"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2053&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:b.aleman@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2053">Bernardo Alemán Rodríguez</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Montecristi</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Espaillat</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9467"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9467&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9467">Carlos Alberto Amarante García</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Espaillat</div></td></td></tr></table></div><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2018"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2018&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:c.garcia@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2018">Carlos María García Gómez</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Espaillat</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santo Domingo</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2021"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2021&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:c.guzman@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2021">Carlos Marién Elías Guzmán</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 6</div></td></td></tr></table></div><div style="clear:both;"></div><h2>San Jos&#233; de Ocoa</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9573"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9573&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9573">César Enrique Gómez Segura</a></div><div class="A11" style="color:#333333;">Bloque: BIS</div><div class="A11" style="color:#333333;">Provincia: San José de Ocoa</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Hato Mayor</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2060"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2060&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:c.castillo@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2060">Cristóbal Venerado Antonio Castillo Liriano</a></div><div class="A11" style="color:#333333;">Bloque: PRD</div><div class="A11" style="color:#333333;">Provincia: Hato Mayor</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Dajab&#243;n</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9535"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9535&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9535">Darío de Jesús Zapata Estévez</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Dajabón</div></td></td></tr></table></div><div style="clear:both;"></div><h2>San Juan</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=773"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=773&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:d.herrera@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=773">David Herrera Díaz</a></div><div class="A11" style="color:#333333;">Bloque: PRD</div><div class="A11" style="color:#333333;">Provincia: San Juan</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santiago</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=795"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=795&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:d.martinez@camaradediputados.gob.do  "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=795">Demóstenes Willian Martínez Hernández</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santiago</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div style="clear:both;"></div><h2>San Crist&#243;bal</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9508"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9508&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9508">Dionisio de la Rosa Rodríguez</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: San Cristóbal</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santo Domingo</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9468"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9468&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9468">Domingo Enrique Barett</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 3</div></td></td></tr></table></div><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9572"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9572&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9572">Domingo Eusebio de León Mascaro</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 5</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Bahoruco</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9516"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9516&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9516">Eduard Jorge Gómez</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Bahoruco</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santo Domingo</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2024"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2024&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:e.hidalgo@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2024">Eduardo Hidalgo Abreu</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 3</div></td></td></tr></table></div><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9502"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9502&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9502">Elías Báez de los Santos</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 4</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Distrito Nacional</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=671"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=671&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:e.serulle@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=671">Elías Rafael Serulle Tavárez</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Distrito Nacional</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santo Domingo</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=810"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=810&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:e.fulgencio@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=810">Elvin Antonio Fulgencio</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>La Vega</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9542"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9542&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9542">Fausto Ramón Ruiz Valdez</a></div><div class="A11" style="color:#333333;">Bloque: PRSC</div><div class="A11" style="color:#333333;">Provincia: La Vega</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Puerto Plata</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=752"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=752&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:f.castillo@camaradediputados.gob.do  "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=752">Félix Antonio Castillo Rodríguez</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Puerto Plata</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Nacional</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9548"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9548&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9548">Fidel Ernesto Santana Mejía</a></div><div class="A11" style="color:#333333;">Bloque: FRENTE-AMPLIO</div><div class="A11" style="color:#333333;">Provincia: Nacional</div></td></td></tr></table></div><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9545"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9545&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9545">Fidelio Arturo Despradel Roque</a></div><div class="A11" style="color:#333333;">Bloque: ALPAIS</div><div class="A11" style="color:#333333;">Provincia: Nacional</div></td></td></tr></table></div><div style="clear:both;"></div><h2>San Jos&#233; de Ocoa</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2028"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2028&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:f.mancebo@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2028">Francisco Antonio Mancebo Melo</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: San José de Ocoa</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santiago</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2029"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2029&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:f.matos@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2029">Francisco Antonio Matos Mancebo</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santiago</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2082"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2082&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:f.santos@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2082">Francisco Antonio Santos Sosa</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Santiago</div><div class="A11" style="color:#333333;">Circ.: 3</div></td></td></tr></table></div><div style="clear:both;"></div><h2>El&#237;as Pi&#241;a</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2004"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2004&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:f.bautista@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2004">Francisco Arturo Bautista Medina</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Elías Piña</div></td></td></tr></table></div><div style="clear:both;"></div><h2>San Crist&#243;bal</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9526"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9526&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9526">Francisco Javier Paulino</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: San Cristóbal</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santo Domingo</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9477"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9477&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9477">Francisco Liranzo</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 3</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Duarte</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9532"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9532&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:F.Romero@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9532">Franklin Martín Romero Morillo</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Duarte</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>San Pedro de Macor&#237;s</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=778"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=778&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:f.pena@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=778">Franklin Ysaías Peña Villalona</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: San Pedro de Macorís</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Dajab&#243;n</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=700"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=700&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:g.reyes@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=700">Gregorio Reyes Castillo</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Dajabón</div></td></td></tr></table></div><div style="clear:both;"></div><h2>La Altagracia</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=688"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=688&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:g.cabrera@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=688">Guido Cabrera Martínez</a></div><div class="A11" style="color:#333333;">Bloque: PLR</div><div class="A11" style="color:#333333;">Provincia: La Altagracia</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Distrito Nacional</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=674"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=674&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:g.sanchez@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=674">Gustavo Antonio Sánchez García</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Distrito Nacional</div><div class="A11" style="color:#333333;">Circ.: 3</div></td></td></tr></table></div><div style="clear:both;"></div><h2>La Altagracia</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2044"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2044&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:h.sanchez@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2044">Hamlet Amado Sánchez Melo</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: La Altagracia</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Pedernales</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2066"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2066&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:h.feliz@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2066">Héctor Darío Féliz Féliz</a></div><div class="A11" style="color:#333333;">Bloque: PRD</div><div class="A11" style="color:#333333;">Provincia: Pedernales</div></td></td></tr></table></div><div style="clear:both;"></div><h2>San Crist&#243;bal</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9544"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9544&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9544">Héctor Ramón Peguero Maldonado</a></div><div class="A11" style="color:#333333;">Bloque: PLR</div><div class="A11" style="color:#333333;">Provincia: San Cristóbal</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>San Juan</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2033"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2033&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:h.meran@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2033">Henry Modesto Merán Gil</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: San Juan</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santo Domingo</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=824"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=824&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:h.fortuna@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=824">Hugo Fernelis Fortuna Tejeda</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 3</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Pedernales</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9549"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9549&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9549">Israel Terrero Vólquez</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Pedernales</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santo Domingo</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=833"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=833&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:j.martinez@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=833">Jesús Martínez Alberty</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 5</div></td></td></tr></table></div><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=828"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=828&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:j.gonzalez@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=828">José Altagracia González Sánchez</a></div><div class="A11" style="color:#333333;">Bloque: PRD</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 4</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Monse&#241;or Nouel</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=738"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=738&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:j.fabian@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=738">José Antonio Fabián Beltré</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Monseñor Nouel</div></td></td></tr></table></div><div style="clear:both;"></div><h2>De dominicanos en el exterior</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=3222"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=3222&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:j.morel@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=3222">José Ernesto Morel Santana</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: De dominicanos en el exterior</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Distrito Nacional</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9476"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9476&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9476">José Felipe La luz Núñez</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Distrito Nacional</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santo Domingo</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=817"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=817&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:j.santana@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=817">José Francisco Santana Suriel</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Hermanas Mirabal</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2087"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2087&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:ji.rosario@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2087">José Isidro Rosario Vásquez</a></div><div class="A11" style="color:#333333;">Bloque: PRD</div><div class="A11" style="color:#333333;">Provincia: Hermanas Mirabal</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Mar&#237;a Trinidad S&#225;nchez</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2010"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2010&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:j.cosme@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2010">José Luís Cosme Mercedes</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: María Trinidad Sánchez</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Duarte</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9531"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9531&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9531">José Luis Rodríguez Hiciano</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Duarte</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santo Domingo</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9473"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9473&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9473">José Rafael García Mercedes</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 6</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santiago</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9529"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9529&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9529">José Ulises Rodríguez Guzmán</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Santiago</div><div class="A11" style="color:#333333;">Circ.: 3</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Puerto Plata</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9521"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9521&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9521">Juan Agustín Medina Santos</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Puerto Plata</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Duarte</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9571"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9571&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9571">Juan Andrés Comprés Brito</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Duarte</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Puerto Plata</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=756"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=756&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:j.quinones@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=756">Juan Carlos Quiñones Minaya</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Puerto Plata</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div style="clear:both;"></div><h2>La Altagracia</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=689"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=689&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:j.campos@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=689">Juan Julio Campos Ventura</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: La Altagracia</div></td></td></tr></table></div><div style="clear:both;"></div><h2>El Seibo</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=708"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=708&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:j.maldonado@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=708">Juan Maldonado Castro</a></div><div class="A11" style="color:#333333;">Bloque: PRD</div><div class="A11" style="color:#333333;">Provincia: El Seibo</div></td></td></tr></table></div><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9530"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9530&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9530">Juan Roberto Rodríguez Hernández</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: El Seibo</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Monte Plata</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=743"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=743&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:j.suazo@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=743">Juan Suazo Marte</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Monte Plata</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Azua</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=694"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=694&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:J.BRITO@CAMARADEDIPUTADOS.GOB.DO"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=694">Julio Alberto Brito Peña</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Azua</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Peravia</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9515"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9515&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9515">Julito Fulcar Encarnación</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Peravia</div></td></td></tr></table></div><div style="clear:both;"></div><h2>De dominicanos en el exterior</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=3223"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=3223&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:l.suriel@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=3223">Levis Suriel Gómez</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: De dominicanos en el exterior</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santo Domingo</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9490"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9490&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9490">Luis Alberto Tejeda Pimentel</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Azua</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9491"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9491&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:l.vargas@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9491">Luis Antonio Vargas Ramírez</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Azua</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santo Domingo</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9475"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9475&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9475">Luis Manuel Henríquez Beato</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=829"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=829&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:lr.sanchez@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=829">Luis Rafael Sánchez Rosario</a></div><div class="A11" style="color:#333333;">Bloque: PRD</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 4</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Duarte</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=706"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=706&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:l.nunez@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=706">Lupe Núñez Rosario</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Duarte</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Valverde</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9504"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9504&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9504">Manuel Andrés Bernard</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Valverde</div></td></td></tr></table></div><div style="clear:both;"></div><h2>San Crist&#243;bal</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=766"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=766&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:m.diaz@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=766">Manuel Antonio Díaz Santos</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: San Cristóbal</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Distrito Nacional</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=685"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=685&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:m.baez@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=685">Manuel Elpidio Báez Mejía</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Distrito Nacional</div><div class="A11" style="color:#333333;">Circ.: 3</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Barahona</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9514"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9514&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9514">Manuel Miguel Florián Terrero</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Barahona</div></td></td></tr></table></div><div style="clear:both;"></div><h2>San Crist&#243;bal</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2016"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2016&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:m.espinosa@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2016">Manuel Orlando Espinosa Medina</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: San Cristóbal</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9487"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9487&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9487">Manuel Sánchez Suazo</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: San Cristóbal</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>De dominicanos en el exterior</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=3224"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=3224&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:m.cross@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=3224">Marcos Genaro Cross Sánchez</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: De dominicanos en el exterior</div><div class="A11" style="color:#333333;">Circ.: 3</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Barahona</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2034"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2034&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:m.montero@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2034">Mariano Montero Vallejo</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Barahona</div></td></td></tr></table></div><div style="clear:both;"></div><h2>La Vega</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2025"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2025&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:m.hidalgo@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2025">Mario José Esteban Hidalgo Beato</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: La Vega</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santiago</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=787"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=787&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:m.castro@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=787">Máximo Castro </a></div><div class="A11" style="color:#333333;">Bloque: PRSC</div><div class="A11" style="color:#333333;">Provincia: Santiago</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santo Domingo</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9538"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9538&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9538">Melvin Alexis Lara Melo</a></div><div class="A11" style="color:#333333;">Bloque: PRSC</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 6</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Saman&#225;</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2026"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2026&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:m.jazmin@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2026">Miguel Ángel Jazmín de la Cruz</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Samaná</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Independencia</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2036"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2036&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:m.peguero@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2036">Miguel Ángel Peguero Méndez</a></div><div class="A11" style="color:#333333;">Bloque: PPC</div><div class="A11" style="color:#333333;">Provincia: Independencia</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santo Domingo</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2015"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2015&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:m.espinal@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2015">Miguel Eduardo Espinal Muñóz</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 4</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Mar&#237;a Trinidad S&#225;nchez</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9518"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9518&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9518">Napoleón López Rodríguez</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: María Trinidad Sánchez</div></td></td></tr></table></div><div style="clear:both;"></div><h2>San Pedro de Macor&#237;s</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9540"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9540&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9540">Nestor Juan Muñoz Rosado</a></div><div class="A11" style="color:#333333;">Bloque: PRSC</div><div class="A11" style="color:#333333;">Provincia: San Pedro de Macorís</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santiago Rodr&#237;guez</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9517"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9517&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9517">Nicolás Tolentino López Mercado</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Santiago Rodríguez</div></td></td></tr></table></div><div style="clear:both;"></div><h2>San Juan</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=8307"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=8307&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=8307">Nidio Encarnación Santiago</a></div><div class="A11" style="color:#333333;">Bloque: PRSC</div><div class="A11" style="color:#333333;">Provincia: San Juan</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Duarte</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2057"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2057&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:o.caba@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2057">Olmedo Caba Romano</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Duarte</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santo Domingo</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2012"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2012&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:o.marchena@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2012">Omar Eugenio De Marchena González</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 5</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Monse&#241;or Nouel</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9519"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9519&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9519">Orlando Antonio Martínez Peña</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Monseñor Nouel</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Independencia</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=721"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=721&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:p.santana@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=721">Pablo Inocencio Santana Díaz</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Independencia</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Monte Plata</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9534"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9534&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9534">Pedro Antonio Tineo Núñez</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Monte Plata</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santo Domingo</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2005"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2005&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:p.billilo@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2005">Pedro Billilo Mota</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 6</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Mar&#237;a Trinidad S&#225;nchez</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2013"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2013&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:p.deoleo@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2013">Pedro Enrique De Óleo Veras</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: María Trinidad Sánchez</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Distrito Nacional</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2041"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2041&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:p.rodriguez@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2041">Pedro Juan Rodríguez Meléndez</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Distrito Nacional</div><div class="A11" style="color:#333333;">Circ.: 3</div></td></td></tr></table></div><div style="clear:both;"></div><h2>La Romana</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2092"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2092&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:p.botello@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2092">Pedro Tomás Botello  Solimán</a></div><div class="A11" style="color:#333333;">Bloque: PRSC</div><div class="A11" style="color:#333333;">Provincia: La Romana</div></td></td></tr></table></div><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=724"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=724&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:p.perez@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=724">Plutarco Pérez</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: La Romana</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Nacional</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2007"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2007&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:ra.camacho@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2007">Radhamés Camacho Cuevas</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Nacional</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santo Domingo</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=814"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=814&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:r.fortuna@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=814">Radhamés Fortuna Sánchez</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>El&#237;as Pi&#241;a</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9501"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9501&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9501">Rafael Ernesto Arias Ramírez</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Elías Piña</div></td></td></tr></table></div><div style="clear:both;"></div><h2>San Crist&#243;bal</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=768"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=768&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:r.abreu@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=768">Rafael Leonidas Abréu Valdéz</a></div><div class="A11" style="color:#333333;">Bloque: PRD</div><div class="A11" style="color:#333333;">Provincia: San Cristóbal</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Bahoruco</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2032"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2032&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:r.mendez@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2032">Rafael Méndez</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Bahoruco</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Distrito Nacional</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2011"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2011&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:r.crespo@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2011">Rafael Tobías Crespo Pérez</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Distrito Nacional</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santiago</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9541"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9541&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9541">Ramón Alfredo Reyes Estévez</a></div><div class="A11" style="color:#333333;">Bloque: PRSC</div><div class="A11" style="color:#333333;">Provincia: Santiago</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Distrito Nacional</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=682"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=682&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:r.bueno@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=682">Ramón Antonio Bueno Patiño</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Distrito Nacional</div><div class="A11" style="color:#333333;">Circ.: 3</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santo Domingo</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=815"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=815&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:r.cabrera@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=815">Ramón Antonio Cabrera Cabrera</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santiago</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=790"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=790&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:r.nunez@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=790">Ramón Dilepcio Núñez Pérez</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santiago</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Montecristi</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9499"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9499&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9499">Ramón Francisco Toribio</a></div><div class="A11" style="color:#333333;">Bloque: PRD</div><div class="A11" style="color:#333333;">Provincia: Montecristi</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Espaillat</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=714"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=714&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:r.camacho@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=714">Ramón Noé Camacho Santos</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Espaillat</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Monte Plata</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2009"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2009&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:r.contreras@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2009">Ricardo De Jesús Contreras Medina</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Monte Plata</div></td></td></tr></table></div><div style="clear:both;"></div><h2>S&#225;nchez Ram&#237;rez</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9510"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9510&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9510">Ricardo de los Santos Polanco</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Sánchez Ramírez</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Monte Plata</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9470"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9470&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9470">Roberto Arturo Berroa Espaillat</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Monte Plata</div></td></td></tr></table></div><div style="clear:both;"></div><h2>San Juan</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2037"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2037&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:r.perez@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2037">Roberto Pérez Lebrón</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: San Juan</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santiago</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9512"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9512&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9512">Robinson de Jesús Díaz Mejía</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Santiago</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>La Vega</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9537"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9537&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9537">Rogelio Alfonso Genao Lanza</a></div><div class="A11" style="color:#333333;">Bloque: PRSC</div><div class="A11" style="color:#333333;">Provincia: La Vega</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Hato Mayor</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9533"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9533&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9533">Ronald José Sánchez Nolasco</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Hato Mayor</div></td></td></tr></table></div><div style="clear:both;"></div><h2>De dominicanos en el exterior</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=3225"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=3225&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:r.luna@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=3225">Rubén Darío Luna Martínez</a></div><div class="A11" style="color:#333333;">Bloque: PRD</div><div class="A11" style="color:#333333;">Provincia: De dominicanos en el exterior</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santo Domingo</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=837"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=837&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:r.maldonado@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=837">Rubén Darío Maldonado Díaz</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santo Domingo</div><div class="A11" style="color:#333333;">Circ.: 6</div></td></td></tr></table></div><div style="clear:both;"></div><h2>La Altagracia</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9543"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9543&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:r.hidalgo@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9543">Rudy Melanio Hidalgo Báez</a></div><div class="A11" style="color:#333333;">Bloque: PLR</div><div class="A11" style="color:#333333;">Provincia: La Altagracia</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Peravia</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=749"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=749&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:s.ramirez@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=749">Santo Ynilcio Ramírez Bethancourt</a></div><div class="A11" style="color:#333333;">Bloque: PRD</div><div class="A11" style="color:#333333;">Provincia: Peravia</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Distrito Nacional</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9523"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9523&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9523">Sergio Moya de la Cruz</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Distrito Nacional</div><div class="A11" style="color:#333333;">Circ.: 3</div></td></td></tr></table></div><div style="clear:both;"></div><h2>San Crist&#243;bal</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=770"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=770&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:t.jimenez@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=770">Tulio Jiménez Díaz</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: San Cristóbal</div><div class="A11" style="color:#333333;">Circ.: 3</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santiago</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2031"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2031&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:v.mencia@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2031">Víctor Enrique Mencía García</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santiago</div><div class="A11" style="color:#333333;">Circ.: 3</div></td></td></tr></table></div><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9507"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9507&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9507">Víctor José D´Aza Tineo</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Santiago</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9471"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9471&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9471">Víctor Manuel Fadul Lantigua</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santiago</div><div class="A11" style="color:#333333;">Circ.: 3</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Distrito Nacional</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=681"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=681&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:v.bisono@camaradediputados.gob.do "><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=681">Víctor Orlando Bisonó Haza</a></div><div class="A11" style="color:#333333;">Bloque: PRSC</div><div class="A11" style="color:#333333;">Provincia: Distrito Nacional</div><div class="A11" style="color:#333333;">Circ.: 2</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Santiago</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=788"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=788&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:v.suarez@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=788">Víctor Valdemar Suárez Díaz</a></div><div class="A11" style="color:#333333;">Bloque: PLD</div><div class="A11" style="color:#333333;">Provincia: Santiago</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div><div style="clear:both;"></div><h2>La Romana</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=9503"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=9503&f=lists_images" border="0" /></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=9503">Wandy Modesto Batista Gómez</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: La Romana</div></td></td></tr></table></div><div style="clear:both;"></div><h2>Distrito Nacional</h2><br /><div class="dip-item-zc" style="margin-bottom:15px; width:230px; height:120px; float:left;"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td width="5%" valign="top"><div style="margin-right:3px;"><a href="cd_diputados_det.aspx?id=2054"><img src="/serve/renderimage.aspx?x=80&y=90&cz=5&m=0&i=2054&f=lists_images" border="0" /></a></div><div style="margin-top:5px; text-align:left;"><a href="mailto:w.arnaud@camaradediputados.gob.do"><img src="img/icomail.jpg" align="absmiddle" border="0" style="margin:0;"></a></div></td><td valign="top"><div style="color:#1E79A5; margin-bottom:5px;"><a class="dip-item-nombre" href="cd_diputados_det.aspx?id=2054">Wellington Amín Arnaud Bisonó</a></div><div class="A11" style="color:#333333;">Bloque: PRM</div><div class="A11" style="color:#333333;">Provincia: Distrito Nacional</div><div class="A11" style="color:#333333;">Circ.: 1</div></td></td></tr></table></div>
+		       
+        </div>
+      </div>
+    </div>
+    <div style="clear:both;"></div>
+  </div>
+  <div style="clear:both;"></div>
+</div>
+</div>
+<div style="clear:both;"></div>
+<div class="footer">
+  <div id="menu">
+    <ul style="width:100px;">
+      <li style="margin-bottom:5px; font-size:13px; margin-right:1px; padding-bottom:3px;"><strong >Instituci&oacute;n</strong></li>
+      <li><a href="cd_mens_bienv.aspx">Presidencia</a></li>
+      <li><a href="cd_diputados_new.aspx">Diputados/as</a></li>
+      <li><a href="cd_org_pleno.aspx">Organización</a></li>
+      <li><a href="cd_datoshistoricos.aspx">Datos Históricos</a></li>
+      <li ><a href="cd_gm_fotos.aspx">Galería Multimedia</a></li>
+    </ul>
+    <ul style="width:119px;">
+      <li style="margin-bottom:5px; font-size:13px; margin-right:1px; padding-bottom:3px;"><strong>Labor Legislativa</strong></li>
+      <li><a href="cd_secciones_pleno.aspx">Sesiones del Pleno</a></li>
+      <li><a href="cd_comisiones.aspx">Comisiones</a></li>
+      
+    </ul>
+    <ul style="width:104px;">
+      <li style="margin-bottom:5px; font-size:13px; margin-right:1px; padding-bottom:3px;"><strong>Agenda</strong></li>
+      <li><a onclick="WebExterna('http://www.camaradediputados.gov.do/PortalSILCamara/Default.aspx?tabid=95')" href="javascript:;">Orden del d&iacute;a</a></li>
+      
+      <li><a href="http://www.camaradediputados.gov.do/PortalSILCamara/Default.aspx?tabid=88">Comisiones</a></li>
+      <li><a href="cd_proxvistaspublics.aspx">Vistas P&uacute;blicas</a></li>
+      <li><a href="cd_actividades.aspx">Actividades</a></li>
+    </ul>
+    <ul style="width:150px;">
+      <li style="margin-bottom:5px; font-size:13px; margin-right:1px; padding-bottom:3px;"><strong>Representación</strong></li>
+      <li><a href="cd_centrepres.aspx">Centro de Representación</a></li>
+      
+      <li><a href="cd_pres2_actividades.aspx">Actividades de representación</a></li>
+    </ul>
+    <ul style="width:100px;">
+      <li style="margin-bottom:5px; font-size:13px; padding-bottom:3px;"><strong>Fiscalización</strong></li>
+      <li><a href="cd_oasep_infogeneral.aspx">OASEP</a></li>
+      
+    </ul>
+    <ul style="width:114px;">
+      <li style="margin-bottom:5px; font-size:13px; margin-right:1px; padding-bottom:3px;"><strong>Transparencia</strong></li>
+      <li><a href="cd_t(2)_constitucion.aspx">Marco Legal</a></li>
+      <li><a href="cd_t(3)_presupuesto.aspx">Presupuesto</a></li>
+      <li><a href="cd_inf_gestion.aspx">Proyectos y Programas</a></li>
+      <li><a href="cd_contcompras.aspx">Compras y Contrataciones</a></li>
+      <li><a href="cd_finanzascont.aspx">Finanzas</a></li>
+      <li><a href="cd_T(4)_RecHumanos.aspx">Recursos Humanos</a></li>
+      <li><a href="cd_declajuradadc.aspx">Declaraciones Juradas</a></li>      
+      
+    </ul>        
+    <ul style="width:160px;">
+      <li style="margin-bottom:5px; font-size:13px; padding-bottom:3px;"><strong>Acceso a la Informaci&oacute;n</strong></li>
+      <li><a href="cd_t(1)_estructura.aspx">Estructura</a></li>
+      <li><a href="cd_t(1)_manualorg.aspx">Manual Organizaci&oacute;n y &nbsp;&nbsp;&nbsp;Procedimientos</a></li>
+      
+      <li><a href="http://oai.camaradediputados.gob.do/">Solicitud de Informaci&oacute;n</a></li>
+      <li><a href="http://www.camaradediputados.gob.do:8091/SolicitudInformacion/ConsultaCasosSugOpiniones.aspx">Opiniones y Sugerencias</a></li>      
+    </ul>  
+    <ul style="width:140px;"> 
+    <li style="margin-bottom:5px; font-size:13px; padding-bottom:3px;"><strong>Contactos</strong></li>
+<li><strong>Dirección: <br /></strong><a href="#">Av Jiménez Moya, Centro de los Héroes de Constanza, Maimón y Estero Hondo, Edificio Congreso Nacional, Distrito Nacional.</a></li>
+<li><strong>Teléfono: <br /></strong><a href="#">809-535-2626</a></li>
+<li><strong>E-Mail: <br /></strong><a href="mailto:diputadosrd@camaradediputados.gob.do">diputadosrd@camaradediputados.gob.do</a></li> 
+    
+    
+  </div>
+  <div style="clear:both; height:10px; font-size:0;"></div>
+  <div id="desarrollo">  
+  </div>
+  <div id="menuv"><a href="cd_frontpage.aspx">Inicio</a> | <a href="cd_politica_priv.aspx">Pol&iacute;ticas de Privacidad</a> | <a href="cd_terminos_uso.aspx">T&eacute;rminos de Uso</a> | <a target="_self" href="https://webmail.camaradediputados.gob.do/owa" style="color:white"><b>Webmail</b></a> | <a href="cd_sitemap.aspx">Mapa del Sitio</a> | Redes Sociales: <a style="margin:0;" title="Facebook" target="_blank" href="http://www.facebook.com/CamaraDeDiputadosDeLaRepublicaDominicana"><img src="img/fot-ico-f.png" align="absmiddle" border="0" style="margin-left:5px;" /></a><a style="margin:0;" title="Twitter" target="_blank" href="http://twitter.com/#!/DiputadosRD"><img src="img/fot-ico-t.png" align="absmiddle" border="0" style="margin-left:2px;" /></a> <a style="margin:0;" title="YouTube" target="_blank" href="http://www.youtube.com/user/CamaraDiputadosRD"><img src="img/fot-ico-y.png" align="absmiddle" border="0" style="margin-left:1px;" /></a>
+    <div align="left" class="copyright">Derechos Reservados 2011.</div>
+  </div>
+  <div style="clear:both; height:5px; font-size:0;"></div>
+</div>
+
+</body>
+</html>
