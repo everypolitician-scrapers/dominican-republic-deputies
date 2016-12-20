@@ -36,13 +36,5 @@ def scrape_list(gender, url)
   end
 end
 
-term = {
-  id: '2016',
-  name: '2016–2020',
-  start_date: '2016',
-  source: 'https://en.wikipedia.org/wiki/Chamber_of_Deputies_of_the_Dominican_Republic',
-}
-ScraperWiki.save_sqlite([:id], term, 'terms')
-
 scrape_list('male', 'http://www.camaradediputados.gob.do/app/app_2011/cd_diputados_new.aspx?gen=Masculino')
 scrape_list('female', 'http://www.camaradediputados.gob.do/app/app_2011/cd_diputados_new.aspx?gen=Femenino')
