@@ -36,5 +36,6 @@ def scrape_list(gender, url)
   end
 end
 
+ScraperWiki.sqliteexecute('DELETE FROM data') rescue nil
 scrape_list('male', 'http://www.camaradediputados.gob.do/app/app_2011/cd_diputados_new.aspx?gen=Masculino')
 scrape_list('female', 'http://www.camaradediputados.gob.do/app/app_2011/cd_diputados_new.aspx?gen=Femenino')
